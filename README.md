@@ -1,0 +1,2 @@
+# AyushRaj_Capgemini_Assignments
+Capgemini Adapt Assignments
