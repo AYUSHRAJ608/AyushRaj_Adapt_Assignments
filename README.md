@@ -1,2 +1,2 @@
-# AyushRaj_Capgemini_Assignments
+# AyushRaj_Adapt_Assignments
 Capgemini Adapt Assignments
