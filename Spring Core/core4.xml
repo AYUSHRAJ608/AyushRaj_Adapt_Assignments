@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context = "http://www.springframework.org/schema/context"
+xsi:schemaLocation = "http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="scq4"/>
+    <context:annotation-config/>
+
+
+    <bean id="bankAccount1" class="scq4.BankAccount">
+        <constructor-arg type = "long" value="1001"/>
+            <constructor-arg value="Ayush"/>
+            <constructor-arg value="savings"/>
+            <constructor-arg type="double" value="10000"/>
+
+    </bean>
+    <bean id="bankAccount2" class="scq4.BankAccount">
+        <constructor-arg type = "long" value="1171"/>
+            <constructor-arg value="Anurag"/>
+            <constructor-arg value="current"/>
+            <constructor-arg type="double" value="20000"/>
+
+    </bean>
+    
+
+       
+
+
+</beans>

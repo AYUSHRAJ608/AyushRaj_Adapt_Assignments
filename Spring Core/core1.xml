@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:lang="http://www.springframework.org/schema/lang"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/lang
+http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+      <bean id="customer1" class="scq1.Customer">
+          <property name="customerId" value="101"/>
+          <property name="customerName" value="Ayush"/>
+          <property name="customerContact" value="7667193317"/>
+          <property name="customerAddress" ref="custAddress1"/>
+
+      </bean>
+      <bean id="custAddress1" class="scq1.Address">
+          <property name="street" value="Devanahalli"/>
+          <property name="city" value="Bengaluru"/>
+          <property name="state" value="Karnataka"/>
+          <property  name="country" value="India"/>
+          <property name="zip" value="562110" />
+      </bean>
+
+
+
+    <bean id="customer2" class = "scq1.Customer">
+        <constructor-arg  type ="int" value="102"/>
+        <constructor-arg value="Anurag"/>
+        <constructor-arg value="6429205261"/>
+        <constructor-arg ref="custAddress2"/>
+    </bean>
+    <bean id="custAddress2" class="scq1.Address">
+        <constructor-arg value="IAS Colony"/>
+        <constructor-arg value="Patna"/>
+        <constructor-arg value="Bihar"/>
+        <constructor-arg value="India"/>
+        <constructor-arg value="800014" />
+    </bean>
+
+</beans>
